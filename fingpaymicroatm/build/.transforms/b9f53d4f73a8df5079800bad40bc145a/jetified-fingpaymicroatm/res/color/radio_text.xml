@@ -1,0 +1,23 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+ *
+ * Developed by Ashish Das
+ *
+ * Email: adas@revamobile.com
+ * Email: adas@revasolutions.com
+ *
+ * Date: October 27, 2012
+ *
+ * All code (c) 2011 Reva Tech Solutions (India) Private Limited (Reva Mobile)
+ * 
+ * All rights reserved
+ * 
+ *
+
+    -->
+
+    <item android:state_checked="true" android:color="@android:color/white"/>
+    <item android:color="@android:color/black"/>
+
+</selector>

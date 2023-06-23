@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_aeps_reports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="@string/aeps_reports"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_1_aeps"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_aeps_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_3sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_circle_upi"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/icon_aeps" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/aeps_nhistory"
+                                    android:textColor="@color/black" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/divider8"
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/material_grey_500"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_circle_money_transfer"
+                                    android:padding="@dimen/_6sdp"
+                                    android:src="@drawable/icon_withdraw" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/_3sdp"
+
+                                    android:text="@string/aeps_nwithdrawal"
+                                    android:textColor="@color/black" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/divider10"
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/material_grey_500" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_aeps_ledger"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_3sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_circle_white"
+                                    android:padding="@dimen/_6sdp"
+                                    android:src="@drawable/icon_aeps_ledger"
+                                    app:tint="#870000" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/aeps_nledger"
+                                    android:textColor="@color/black" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_1_aeps"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:weightSum="3">
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_aeps_commissionslab"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_100sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_3sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_circle_white"
+                                    android:padding="@dimen/_8sdp"
+                                    android:src="@drawable/icon_percent"
+                                    app:tint="#119818" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/aeps_ncommission_slab"
+                                    android:textColor="@color/black" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/divider8_aeps"
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/material_grey_500" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_aeps_comm_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_100sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_circle_white"
+                                    android:padding="@dimen/_6sdp"
+                                    app:tint="#0097A7"
+                                    android:src="@drawable/icon_history_clock" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="AEPS\nCommission History"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:id="@+id/divider9_aeps"
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/material_grey_500" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_payouthistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_100sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_circle_white"
+                                    android:padding="@dimen/_6sdp"
+                                    app:tint = "#0097A7"
+                                    android:src="@drawable/ic_baseline_forward_to_inbox_24" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="Aeps\nPayout\nHistory"
+                                    android:textColor="@color/black" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dmt_reports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_aeps_reports"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="@string/dmt_reports"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_1_dmt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:weightSum="3">
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_dmt_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_3sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_circle_white"
+                                    android:padding="@dimen/_5sdp"
+                                    app:tint="#742BF4"
+                                    android:src="@drawable/icon_dmt" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/dmt_history"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/divider8_dmt"
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/material_grey_500" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_dmt_commission_slab"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_3sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_circle_white"
+                                    android:padding="@dimen/_6sdp"
+                                    app:tint="#C82AE3"
+                                    android:src="@drawable/icon_commission_dmt" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/dmt_ncommission_slab"
+                                    android:textColor="@color/black" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/divider9_dmt"
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/material_grey_500" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_90sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/bg_circle_white"
+                                    android:padding="@dimen/_6sdp"
+                                    app:tint = "#E64A19"
+                                    android:src="@drawable/icon_dmtcomissionhis" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/dmt_ncommission_history"
+                                    android:textColor="@color/black" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_1_dmt"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:weightSum="2">
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

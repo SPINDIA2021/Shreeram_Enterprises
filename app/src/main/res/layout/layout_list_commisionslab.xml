@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <LinearLayout
+            android:id="@+id/ll_dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custToolbar"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvPackageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Operator Name"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tvCommisionRecvd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Commission Recieved"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvMembertype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Commission Recieved"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvMaxCommision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Commission Recieved"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvPayoutCharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Commission Recieved"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

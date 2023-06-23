@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Shreeram Enterprises</string>
+
+    <string name="balance" translatable="false">बेलेंस</string>
+    <string name="Rupee" translatable="false">\u20B9</string>
+
+    <string name="password" translatable="false">पासवर्ड</string>
+    <string name="log_in" translatable="false">लॉग इन</string>
+    <string name="forgot_password" translatable="false">पासवर्ड भूल गए?</string>
+    <string name="register_here" translatable="false">रजिस्टर</string>
+    <string name="mobile_recharge" translatable="false">मोबाइल\nरिचार्ज</string>
+    <string name="micro_natm" translatable="false">माइक्रो\nएटीएम</string>
+    <string name="bus_nbooking" translatable="false">बस बुकिंग</string>
+    <string name="insurance_npayment" translatable="false">बीमा\n भुगतान</string>
+    <string name="aeps_npayments" translatable="false">एईपीएस\nपेमेंट्स</string>
+    <string name="data_ncard" translatable="false">डेटा\nकार्ड</string>
+    <string name="gas_npayment" translatable="false">गैस \n भुगतान</string>
+    <string name="water_payment" translatable="false">पानी \n भुगतान</string>
+    <string name="fasttag_nrecharge" translatable="false">फास्टटैग\nरिचार्ज</string>
+    <string name="dmt_npayment" translatable="false">डीएमटी \n भुगतान</string>
+    <string name="category" translatable="false">केटीगरी</string>
+    <string name="view_users" translatable="false">उपयोगकर्ता देखें</string>
+    <string name="add_user" translatable="false">उपयोगकर्ता जोड़ें</string>
+    <string name="technical_error" translatable="false">हम कुछ तकनीकी समस्या का सामना कर रहे हैं, कृपया कुछ समय बाद प्रयास करें।</string>
+
+    <!--    Navigation-->
+    <string name="drawerOpen" translatable="false">ड्रॉवर ओपन</string>
+    <string name="drawerClose" translatable="false">ड्रॉवर बंद</string>
+    <string name="home_fragment" translatable="false">होम फ्रेगमेंट</string>
+    <string name="sport_fragment" translatable="false">स्पोर्ट फ्रेगमेंट</string>
+    <string name="movie_fragment" translatable="false">मूवी फ्रेगमेंट</string>
+    <string name="wallet" translatable="false">वालेट</string>
+    <string name="rupee_zero" translatable="false">₹ 0.00</string>
+    <string name="aeps" translatable="false">एईपीएस</string>
+    <string name="request_nfunds" translatable="false">अनुरोध\nफंड</string>
+    <string name="add_nmoney" translatable="false">पैसे\n जोड़ें</string>
+    <string name="transfer_funds" translatable="false">धनराशि का\n ट्रांसफर</string>
+    <string name="fund_services" translatable="false">निधि सेवाएं</string>
+    <string name="recharge_services" translatable="false">रिचार्ज सेवाएं</string>
+    <string name="recharge" translatable="false">रिचार्ज</string>
+    <string name="dth_recharge" translatable="false">डीटीएच रिचार्ज</string>
+    <string name="dth_number" translatable="false">डीटीएच संख्या</string>
+    <string name="select_operator" translatable="false">ऑपरेटर चुनें</string>
+    <string name="enter_amount" translatable="false">राशि डालें</string>
+    <string name="land_line_recharge" translatable="false">लैंड लाइन रिचार्ज</string>
+    <string name="land_line_number" translatable="false">लैंडलाइन नंबर</string>
+    <string name="request_funds" translatable="false">फंड का अनुरोध करें</string>
+    <string name="send_request" translatable="false">अनुरोध भेजा</string>
+    <string name="add_money" translatable="false">पैसे जोड़ें</string>
+    <string name="phone_pe" translatable="false">फोन पे</string>
+    <string name="google_pay" translatable="false">गूगल पे</string>
+    <string name="paytm" translatable="false">पेटीएम</string>
+    <string name="amazon_pay" translatable="false">अमेज़न पे</string>
+    <string name="transfer_funds_title" translatable="false">धनराशि का ट्रांसफर</string>
+    <string name="enter_amount_to_transfer" translatable="false">स्थानांतरित करने के लिए राशि दर्ज करें</string>
+    <string name="recharge_reports" translatable="false">रिचार्ज रिपोर्ट</string>
+    <string name="all_reports" translatable="false">सभी\nरिपोर्ट्स</string>
+    <string name="specific_report" translatable="false">विशिष्ट\nरिपोर्ट</string>
+    <string name="fund_reports" translatable="false">फंड रिपोर्ट</string>
+    <string name="other_reports" translatable="false">अन्य रिपोर्टें</string>
+    <string name="debited_funds" translatable="false">डेबिट फंड</string>
+    <string name="fund_requests" translatable="false">निधि अनुरोध</string>
+    <string name="ledgers" translatable="false">बहीखाते</string>
+    <string name="commission_slab" translatable="false">कमीशन स्लैब</string>
+    <string name="commission_report" translatable="false">कमीशन रिपोर्ट</string>
+    <string name="dispute_report" translatable="false">विवाद\nरिपोर्ट</string>
+    <string name="aeps_reports" translatable="false">एईपीएस रिपोर्ट</string>
+    <string name="aeps_nhistory" translatable="false">एईपीएस \ इतिहास</string>
+    <string name="aeps_nwithdrawal" translatable="false">एईपीएस\nनिकासी</string>
+    <string name="aeps_nledger" translatable="false">एईपीएस\nलेजर</string>
+    <string name="aeps_ncommission_slab" translatable="false">एईपीएस\nकमीशन स्लैब</string>
+    <string name="dmt_ncommission_slab" translatable="false">डीएमटी\nकमीशन स्लैब</string>
+    <string name="dmt_reports" translatable="false">डीएमटी रिपोर्टें</string>
+    <string name="dmt_history" translatable="false">डीएमटी\nइतिहास</string>
+    <string name="dmt_ndispute" translatable="false">डीएमटी\nविवाद</string>
+    <string name="dmt_ncommission_history" translatable="false">डीएमटी\nकमीशन इतिहास</string>
+    <string name="date_range" translatable="false">तिथि सीमा</string>
+    <string name="recharge_type" translatable="false">रिचार्ज प्रकार</string>
+    <string name="dd_mmm_yy_dd_mmm_yy" translatable="false">dd MMM yy</string>
+    <string name="pull_to_refresh" translatable="false">रीफ़्रेश करने के लिए नीचे खींचें</string>
+    <string name="txnid" translatable="false">TXNID :</string>
+    <string name="dispute" translatable="false">विवाद</string>
+    <string name="recid" translatable="false">RECID :</string>
+    <string name="operator" translatable="false">ऑपरेटर</string>
+    <string name="recharge_number" translatable="false">रिचार्ज नंबर </string>
+    <string name="opening_nbalance" translatable="false">ओपनिंग\nबैलेंस</string>
+    <string name="commission_nrecieved" translatable="false">कमीशन\nमिला</string>
+    <string name="closing_nbalance" translatable="false">समापन\nशेष</string>
+    <string name="my_profile" translatable="false">मेरी प्रोफाइल</string>
+    <string name="retailer" translatable="false">फुटकर विक्रेता</string>
+    <string name="change_npassword" translatable="false">बदलें\nपासवर्ड</string>
+    <string name="change_npin" translatable="false">बदलें\nपिन करें</string>
+    <string name="forgot_pin" translatable="false">पिन भूल गए?</string>
+    <string name="call_support" translatable="false">समर्थन प्राप्त करें</string>
+    <string name="utilities" translatable="false">उपयोगिताओं</string>
+    <string name="current_password" translatable="false">Current Password</string>
+    <string name="new_password" translatable="false">New Password</string>
+    <string name="confirm_new_password" translatable="false">Confirm New Password</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="confirm" translatable="false">Confirm</string>
+    <string name="change_password" translatable="false">Change Password</string>
+    <string name="change_pin" translatable="false">Change Pin</string>
+    <string name="current_pin" translatable="false">Current Pin</string>
+    <string name="new_pin" translatable="false">New Pin</string>
+    <string name="confirm_new_pin" translatable="false">Confirm New Pin</string>
+    <string name="transaction_id" translatable="false">Transaction Id :</string>
+    <string name="recharge_id" translatable="false">Recharge Id :</string>
+    <string name="amount" translatable="false">Amount</string>
+    <string name="recharge_failed" translatable="false">Recharge Failed</string>
+    <string name="kyc_not_verified" translatable="false">KYC Not Verified</string>
+    <string name="verify_kyc" translatable="false">Verify KYC</string>
+    <string name="_12_digit_aadhaar_number" translatable="false">12 -Digit Aadhaar Number</string>
+    <string name="manage_users" translatable="false">Manage Users</string>
+    <string name="user_name" translatable="false">User Name</string>
+    <string name="mobile_number" translatable="false">Mobile Number</string>
+    <string name="user_email" translatable="false">User Email</string>
+    <string name="user_address" translatable="false">User Address</string>
+    <string name="upload_aadhaar_card" translatable="false">Upload Aadhaar Card</string>
+    <string name="aadhaar_card" translatable="false">Aadhaar Card </string>
+    <string name="register" translatable="false">Register</string>
+    <string name="pay_bills" translatable="false">Pay Bills</string>
+    <string name="pay_your_bills_with_bbps" translatable="false">Pay your bills with BBPS</string>
+    <string name="services" translatable="false">Our Services</string>
+    <string name="mobile_npostpaid" translatable="false">Mobile Postpaid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="electricity" translatable="false">Electricity</string>
+    <string name="select_state" translatable="false">Select State</string>
+    <string name="select" translatable="false">Select</string>
+    <string name="select_board" translatable="false">Select Board</string>
+    <string name="enter_customer_number" translatable="false">Enter Customer Number</string>
+    <string name="proceed" translatable="false">Proceed</string>
+    <string name="pay_bill" translatable="false">Pay bill</string>
+    <string name="select_dth_operator" translatable="false">Select Dth Operator</string>
+    <string name="select_mobile_operator" translatable="false">Select Mobile Operator</string>
+    <string name="view_receipt" translatable="false">View Receipt</string>
+    <string name="done" translatable="false">Done</string>
+    <string name="fetch_bill" translatable="false">Fetch Bill</string>
+    <string name="or" translatable="false">OR</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="no_address_found" translatable="false">Sorry, no address found</string>
+    <string name="no_location_data_provided" translatable="false">No location data provided</string>
+    <string name="service_not_available" translatable="false">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used" translatable="false">Invalid latitude or longitude used</string>
+    <string name="title_activity_cabs_map" translatable="false">Map</string>
+    <string name="authorization" translatable="false">Authorization</string>
+    <string name="error_mobile_number" translatable="false">Invalid Mobile Number</string>
+    <string name="error_password" translatable="false">Invalid Password</string>
+    <string name="content_type" translatable="false">Content-Type</string>
+    <string name="x_api_key" translatable="false">X-API-KEY</string>
+    <string name="error_internet" translatable="false">No Internet Connection</string>
+    <string name="btn_okay" translatable="false">OKAY</string>
+    <string name="error_invalid_email" translatable="false">Invalid Email</string>
+    <string name="invalid_aadhaar" translatable="false">Invalid Aadhaar Number</string>
+    <string name="error_invalid_address" translatable="false">Invalid Address</string>
+    <string name="error_invalid_name" translatable="false">Invalid Name</string>
+    <string name="scrern_sixe" translatable="false">SCREEN SIZE</string>
+    <string name="error_server_error" translatable="false">Oops! Something went wrong!</string>
+    <string name="error_api" translatable="false">Error of API</string>
+    <string name="response" translatable="false">Response</string>
+    <string name="error_expired_token" translatable="false">Expired token</string>
+    <string name="error_session_expired" translatable="false">Session Expired!</string>
+    <string name="error_please_login_again" translatable="false">Please Login Again</string>
+    <string name="permission_granted" translatable="false">Permission Granted</string>
+    <string name="permission_denied" translatable="false">Permission Denied</string>
+    <string name="error_need_permission" translatable="false">You need to allow access permissions</string>
+    <string name="error_invalid_amount" translatable="false">Invalid Amount</string>
+    <string name="error_invalid_dth" translatable="false">Invalid DTH Number</string>
+    <string name="error_invalid_landline" translatable="false">Invalid Landline Number</string>
+    <string name="error_select_operator" translatable="false">Please Selefcft Operator</string>
+    <string name="view_balance" translatable="false">View Balance</string>
+    <string name="available_balance" translatable="false">Available Balance</string>
+    <string name="error_attention" translatable="false">Attention!!</string>
+    <string name="status" translatable="false">Status</string>
+    <string name="from" translatable="false">From</string>
+    <string name="to" translatable="false">To</string>
+    <string name="select_date" translatable="false">Select Date</string>
+    <string name="launch" translatable="false">LAUNCH E-Digital MATM</string>
+    <string name="cyrusdmt" translatable="false">Cyrus DMT</string>
+    <string name="morpho_device" translatable="false">Morpho Device</string>
+    <string name="amount_debited" translatable="false">Amount \nDebited</string>
+    <string name="product" translatable="false">Product</string>
+    <string name="mantra_device" translatable="false">मंत्र यंत्र</string>
+    <string name="bank_account_number" translatable="false">बैंक खाता संख्या</string>
+    <string name="request_remarks" translatable="false">रिक्वेस्ट रिमार्क्स </string>
+    <string name="pan_number" translatable="false">पैन नंबर</string>
+    <string name="electricity_recharge" translatable="false">बिजली का रिचार्ज</string>
+    <string name="electricity_number" translatable="false">बिजली उपभोक्ता संख्या</string>
+    <string name="electricity_bill" translatable="false">बिजली \nबिल</string>
+    <string name="enter_billing_unit" translatable="false">बिलिंग यूनिट दर्ज करें</string>
+    <string name="select_circle" translatable="false">मंडल का चयन करें</string>
+    <string name="note_optional" translatable="false">नोट (वैकल्पिक)</string>
+
+
+    <string-array name="arrayFingerCount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="arrayFingerType">
+        <item>FMR</item>
+        <item>FIR</item>
+    </string-array>
+
+    <string-array name="arrayFingerFormat">
+        <item>XML</item>
+        <item>PROTOBUF</item>
+    </string-array>
+
+    <string-array name="arrayEnv">
+        <item>S</item>
+        <item>PP</item>
+        <item>P</item>
+    </string-array>
+
+    <string name="transaction_nhistory" translatable="false">ट्रांजेक्शन इतिहास</string>
+    <string name="wallet_nsummary" translatable="false">बटुआ\nसारांश</string>
+    <string name="don_t_have_account_sign_up" translatable="false"><font color='#000000'>खाता नहीं है?</font><font color='#1F7BD6'> साइन अप करें</font></string>
+    <string name="already_have_account_sign_in" translatable="false"><font color='#000000'>पहले से खाता है?</font><font color='#1F7BD6'> दाखिल करना</font></string>
+    <string name="forgot_string" tools:ignore="MissingTranslation" translatable="false">हम आपको आपके फ़ोन नंबर पर एक वन टाइम पासवर्ड भेजेंगे</string>
+    <string name="dmt">डीएमटी</string>
+    <string name="domestic_money_transfer">घरेलू मनी ट्रांसफर</string>
+    <string name="aePS">एईपीएस</string>
+    <string name="aadhar_enabled_payment_system">आधार सक्षम भुगतान प्रणाली</string>
+    <string name="redeem">भुनाना</string>
+    <string name="prepaid">प्रीपेड</string>
+    <string name="postpaid">पोस्टपेड</string>
+    <string name="dth">डीटीएच</string>
+    <string name="landline">लैंडलाइन</string>
+    <string name="bill_payment">बिल भुगतान</string>
+    <string name="buy_products_and_services">उत्पाद और सेवाएँ खरीदें</string>
+    <string name="aadhar_pay">आधार भुगतान</string>
+    <string name="cash_deposit">नकद जमा</string>
+    <string name="buy_history">बाए इतिहास</string>
+    <string name="cash_deposit_nwith_otp">नकद जमा \nOTP के साथ</string>
+    <string name="scanner">चित्रान्वीक्षक</string>
+    <string name="offline_pancard">ऑफलाइन पैनकार्ड</string>
+    <string name="view_daybook">डेबुक देखें</string>
+    <string name="view_reports">रिपोर्ट देखें</string>
+
+</resources>

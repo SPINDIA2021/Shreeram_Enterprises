@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.satmatgroup.shreeram">
+
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <permission android:name="${applicationId}.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".main_controller.VolleySingleton"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".recharge_services.ElectricityRechargeActivity"/>
+        <activity android:name=".services_and_products.BuySingleProductActivity" />
+        <activity android:name=".activities_aeps.CashDepositOtpActivity" />
+        <activity android:name=".services_and_products.ProductsAndServicesHistory" />
+        <activity android:name=".services_and_products.BuyOrBookActivity" />
+        <activity android:name=".services_and_products.BuyProductsActivity" />
+        <activity android:name=".dmt.SelectDmtActivity" />
+        <activity android:name=".activities_aeps.CashDepositActivity" />
+        <activity android:name=".dmt.DmtOtpActivity" />
+        <activity android:name=".activities_aeps.MinistatementActivity" />
+        <activity android:name=".activities_aeps.InvoiceViewActivity" />
+        <activity android:name=".activities_aeps.BalanceCheckResponseActivity" />
+        <activity android:name=".activities_aeps.CashWithdrawalSuccessActivity" />
+        <activity android:name=".dmt.DmtCommissionSlabActivity" />
+        <activity android:name=".activities_aeps.AepsCommissionActivity" />
+        <activity android:name=".microatm.MicroAtmActivity" />
+        <activity android:name=".microatm.MicroAtmLoginActivity" />
+        <activity android:name=".activities_aeps.aepshistory.AepsHistoryActivity" />
+        <activity android:name=".activities_aeps.AepsCommissionSlabActivity" />
+        <activity android:name=".authentication.ForgotPassword" />
+        <activity android:name=".payout.PayoutHistoryActivity" />
+        <activity android:name=".payout.PayoutActivity" />
+        <activity android:name=".activities_aeps.SelectDeviceActivity" />
+        <activity android:name=".activities_aeps.AepsTransactionActivity" />
+        <activity android:name=".activities_aeps.aepsfinger.MantraDeviceActivity" />
+        <activity android:name=".dmt.AddBeneficiaryActivity" />
+        <activity android:name=".recharge_services.MobilePostpaidActivity"/>
+        <activity android:name=".recharge_services.MobilePrepaidActivity"/>
+        <activity
+            android:name=".dmt.ViewDmtTransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dmt.DmtTransferFundsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dmt.DmtBenificiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dmt.DmtLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities_aeps.AepsKycDetailsActivity" />
+        <activity android:name=".activities_aeps.AepsBankDetailsActivity" />
+        <activity android:name=".activities_aeps.AepsAddressActivity" />
+        <activity android:name=".activities_aeps.AepsOnboardActivity" />
+        <activity android:name=".reports.recharge_reports.RaiseDisputeActivity" />
+        <activity android:name=".navigation_activities.SupportActivity" />
+        <activity android:name=".users.CreateUserActivity" />
+        <activity android:name=".reports.recharge_reports.SpecificRechargeHistoryActivity" />
+        <activity android:name=".authentication.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities_bbps.complaints.ComplaintStatusActivity" />
+        <activity android:name=".activities_bbps.complaints.RaiseComplaintActivity" />
+        <activity android:name=".activities_bbps.InvoiceReceiptActivity" />
+        <activity android:name=".activities_bbps.BbpsBillTransactionActivity" />
+        <activity android:name=".activities_bbps.BbpsBillConfirmationActivity" />
+        <activity android:name=".activities_bbps.BbpsMainActivity" />
+        <activity android:name=".authentication.RegisterActivity" />
+        <activity android:name=".users.MyUsersActivity" />
+        <activity android:name=".user_profile.KycVerificationActivity" />
+        <activity android:name=".user_profile.ProfileActivity" />
+        <activity android:name=".reports.recharge_reports.AllRechargeReportsActivity" />
+        <activity android:name=".reports.ReportsActivity" />
+        <activity
+            android:name=".fund_services.TransferFundsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".fund_services.AddMoneyActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".fund_services.RequestFundsActivity" />
+        <activity android:name=".recharge_services.LandLineRechargeActivity" />
+        <activity android:name=".recharge_services.DthRechargeActivity" />
+        <activity android:name=".recharge_services.MobileRechargeActivity" />
+        <activity android:name=".reports.recharge_reports.FundRecieveReportActivity" />
+        <activity android:name=".reports.recharge_reports.CommisionReportActivity" />
+        <activity android:name=".reports.recharge_reports.CommissionSlabActivity" />
+        <activity android:name=".reports.recharge_reports.DayBookActivity" />
+        <activity android:name=".reports.recharge_reports.DisputeReportHistoryActivity" />
+        <activity android:name=".reports.recharge_reports.FundRequestReportActivity" />
+        <activity android:name=".reports.recharge_reports.FundTransferReportActivity" />
+        <activity android:name=".reports.recharge_reports.LedgerReportActivity" />
+        <activity android:name=".category.CategoryActivity" />
+        <activity android:name=".category.InnerCategoryActivity" />
+        <activity android:name=".NewMainActivity"/>
+        <activity android:name=".pancardOffline.OfflinePancardActivity" />
+        <activity android:name=".authentication.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities_aeps.aepshistory.AepsTransactionActivityNew"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".daybook.DayBookTabActivity" />
+        <activity android:name=".scanner.ScannerActivity"/>
+    </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
+
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="new_app_color">#061C32</color>
+
+    <color name="colorPrimary">#061C32</color>
+    <color name="colorPrimaryDark">#061C32</color>
+    <color name="colorAccent">#061C32</color>
+
+    <color name="colorLabel">#000000</color>
+    <color name="colorBg">#80B0C4DE</color>
+
+    <color name="blue">#303F9F</color>
+    <color name="dark_blue">#235977</color>
+
+    <color name="btn_green">#13ca7a</color>
+    <color name="sky_blue">#87ceeb</color>
+    <color name="black">#000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="off_white">#CDCDCD</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="grey_circle">#E7E8EB</color>
+    <color name="amber">#FFBF00</color>
+    <color name="status_bar">#061C32</color>
+    <color name="recharge_status_bar">#C2185B</color>
+
+    <color name="app_color">#F42A02</color>
+
+    <color name="green">#4cc08f</color>
+
+    <color name="Pending">#FFA726</color>
+    <color name="Success">#66BB6A</color>
+    <color name="Failed">#EF5350</color>
+    <color name="Opening_Balance">#29B6F6</color>
+    <color name="Debited">#C2185B</color>
+
+    <color name="dark_green_status">#3A8E45</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="bg_all">#EDEDED</color>
+
+    <color name="newcolor1">#061C32</color>
+    <color name="newcolor2">#1F7BD6</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

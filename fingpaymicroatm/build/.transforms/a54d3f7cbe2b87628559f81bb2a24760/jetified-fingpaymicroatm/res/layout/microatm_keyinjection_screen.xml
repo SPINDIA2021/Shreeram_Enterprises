@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mainlayout">
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/tv_status"
+        style="@style/header_color_text"
+        android:layout_below="@+id/progress_bar"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

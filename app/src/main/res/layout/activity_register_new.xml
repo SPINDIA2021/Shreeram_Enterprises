@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_progressbar"
+        android:visibility="gone"
+        android:elevation="@dimen/_3sdp">
+
+        <ProgressBar
+            android:id="@+id/progress_bar1"
+            style="?android:attr/progressBarStyle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/progress_icon"
+            android:elevation="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/loading"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/progress_bar1"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/loginback">
+
+        <com.satmatgroup.shreeram.utils.CustomTextviewHeading
+            android:id="@+id/text_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <com.satmatgroup.shreeram.utils.CustomTextviewHeading
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="30dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_top"
+        android:layout_marginTop="-20dp"
+        android:layout_marginHorizontal="15dp">
+
+        <RelativeLayout
+            android:id="@+id/lay_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle_back"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/etRegisterUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Username"
+                android:inputType="text"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lay_username"
+            android:background="@drawable/rectangle_back"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/etRegisterUserMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Mobile number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lay_mobile"
+            android:background="@drawable/rectangle_back"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/etRegisterUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginHorizontal="10dp"
+                android:hint="User Email"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_regular"
+                android:background="@null"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lay_aadhar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lay_email"
+            android:background="@drawable/rectangle_back"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/etRegisterUserAadhaarNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="12"
+                android:layout_marginHorizontal="10dp"
+                android:hint="12 -Digit Aadhaar Number"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_regular"
+                android:background="@null"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lay_pan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lay_aadhar"
+            android:background="@drawable/rectangle_back"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/etRegisterUserPanNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters"
+                android:maxLength="10"
+                android:layout_marginHorizontal="10dp"
+                android:hint="PAN number"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_regular"
+                android:background="@null"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lay_pan"
+            android:background="@drawable/rectangle_back"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/etRegisterUserAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:layout_marginHorizontal="10dp"
+                android:hint="User Address"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_regular"
+                android:background="@null"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvtilte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:padding="@dimen/_2sdp"
+            android:text="Upload Images :"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/lay_address"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layUpload"
+            android:layout_below="@+id/tvtilte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="@string/aadhaar_card"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/ivAddAadharCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg_square_image"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/icon_add_adhaar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp"
+                    android:text="PAN Card "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+
+                    android:id="@+id/ivAddPanCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg_square_image"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/icon_add_adhaar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btnEnquire"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/layUpload"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_back"
+            android:backgroundTint="@color/newcolor1"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_entry"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_regular"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColor="@color/newcolor1"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRegisterHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/already_have_account_sign_in"
+        android:textColor="@color/newcolor2"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivBackBtn"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfileImageFinal"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/custToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_8sdp"
+        android:src="@drawable/icon_addprofile"
+        android:visibility="gone" />
+</RelativeLayout>

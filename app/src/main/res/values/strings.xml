@@ -1,0 +1,248 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Shreeram Enterprises</string>
+
+    <string name="balance" translatable="false">Balance</string>
+    <string name="Rupee" translatable="false">\u20B9</string>
+
+    <string name="password" translatable="false">Password</string>
+    <string name="log_in" translatable="false">Log In</string>
+    <string name="forgot_password" translatable="false">Forgot Password?</string>
+    <string name="register_here" translatable="false">Register</string>
+    <string name="mobile_recharge" translatable="false">Mobile\nRecharge</string>
+    <string name="micro_natm" translatable="false">Micro\nATM</string>
+    <string name="bus_nbooking" translatable="false">Bus\nBooking</string>
+    <string name="insurance_npayment" translatable="false">Insurance\nPayment</string>
+    <string name="aeps_npayments" translatable="false">AEPS\nPayments</string>
+    <string name="data_ncard" translatable="false">Data\nCard</string>
+    <string name="gas_npayment" translatable="false">Gas\nPayment</string>
+    <string name="water_payment" translatable="false">Water\nPayment</string>
+    <string name="fasttag_nrecharge" translatable="false">FastTag\nRecharge</string>
+    <string name="dmt_npayment" translatable="false">DMT\nPayment</string>
+    <string name="category" translatable="false">Category</string>
+    <string name="view_users" translatable="false">View Users</string>
+    <string name="add_user" translatable="false">Add User</string>
+    <string name="technical_error" translatable="false">We are facing some technical issue, please try after some time.</string>
+
+    <!--    Navigation-->
+    <string name="drawerOpen" translatable="false">drawerOpen</string>
+    <string name="drawerClose" translatable="false">drawerClose</string>
+    <string name="home_fragment" translatable="false">Home Fragment</string>
+    <string name="sport_fragment" translatable="false">Sport Fragment</string>
+    <string name="movie_fragment" translatable="false">Movie Fragment</string>
+    <string name="wallet" translatable="false">Wallet</string>
+    <string name="rupee_zero" translatable="false">₹ 0.00</string>
+    <string name="aeps" translatable="false">Aeps</string>
+    <string name="request_nfunds" translatable="false">Request\nFunds</string>
+    <string name="add_nmoney" translatable="false">Add\nMoney</string>
+    <string name="transfer_funds" translatable="false">Transfer\nFunds</string>
+    <string name="fund_services" translatable="false">Fund Services</string>
+    <string name="recharge_services" translatable="false">Recharge Services</string>
+    <string name="recharge" translatable="false">Recharge</string>
+    <string name="dth_recharge" translatable="false">Dth Recharge</string>
+    <string name="dth_number" translatable="false">DTH Number</string>
+    <string name="select_operator" translatable="false">Choose Operator</string>
+    <string name="enter_amount" translatable="false">Enter Amount</string>
+    <string name="land_line_recharge" translatable="false">Land-line Recharge</string>
+    <string name="land_line_number" translatable="false">Land-line Number</string>
+    <string name="request_funds" translatable="false">Request Funds</string>
+    <string name="send_request" translatable="false">Send Request</string>
+    <string name="add_money" translatable="false">Add Money</string>
+    <string name="phone_pe" translatable="false">Phone Pe</string>
+    <string name="google_pay" translatable="false">Google Pay</string>
+    <string name="paytm" translatable="false">Paytm</string>
+    <string name="amazon_pay" translatable="false">Amazon Pay</string>
+    <string name="transfer_funds_title" translatable="false">Transfer Funds</string>
+    <string name="enter_amount_to_transfer" translatable="false">Enter Amount to Transfer</string>
+    <string name="recharge_reports" translatable="false">Recharge Reports</string>
+    <string name="all_reports" translatable="false">All\nReports</string>
+    <string name="specific_report" translatable="false">Specific\nReport</string>
+    <string name="fund_reports" translatable="false">Fund Reports</string>
+    <string name="other_reports" translatable="false">Other Reports</string>
+    <string name="debited_funds" translatable="false">Debited Funds</string>
+    <string name="fund_requests" translatable="false">Fund Requests</string>
+    <string name="ledgers" translatable="false">Ledgers</string>
+    <string name="commission_slab" translatable="false">Commission Slab</string>
+    <string name="commission_report" translatable="false">Commission Report</string>
+    <string name="dispute_report" translatable="false">Dispute\nReport</string>
+    <string name="aeps_reports" translatable="false">AEPS Reports</string>
+    <string name="aeps_nhistory" translatable="false">AEPS\nHistory</string>
+    <string name="aeps_nwithdrawal" translatable="false">AEPS\nWithdrawal</string>
+    <string name="aeps_nledger" translatable="false">AEPS\nLedger</string>
+    <string name="aeps_ncommission_slab" translatable="false">AEPS\nCommission Slab</string>
+    <string name="dmt_ncommission_slab" translatable="false">DMT\nCommission Slab</string>
+    <string name="dmt_reports" translatable="false">DMT Reports</string>
+    <string name="dmt_history" translatable="false">DMT\nHistory</string>
+    <string name="dmt_ndispute" translatable="false">DMT\nDispute</string>
+    <string name="dmt_ncommission_history" translatable="false">DMT\nCommission History</string>
+    <string name="date_range" translatable="false">Date Range</string>
+    <string name="recharge_type" translatable="false">Recharge Type</string>
+    <string name="dd_mmm_yy_dd_mmm_yy" translatable="false">dd MMM yy</string>
+    <string name="pull_to_refresh" translatable="false">Pull down to refresh</string>
+    <string name="txnid" translatable="false">TXNID :</string>
+    <string name="dispute" translatable="false">Dispute</string>
+    <string name="recid" translatable="false">RECID :</string>
+    <string name="operator" translatable="false">Operator</string>
+    <string name="recharge_number" translatable="false">Recharge Number </string>
+    <string name="opening_nbalance" translatable="false">Opening\nBalance</string>
+    <string name="commission_nrecieved" translatable="false">Commission\nRecieved</string>
+    <string name="closing_nbalance" translatable="false">Closing\nBalance</string>
+    <string name="my_profile" translatable="false">My Profile</string>
+    <string name="retailer" translatable="false">Retailer</string>
+    <string name="change_npassword" translatable="false">Change\nPassword</string>
+    <string name="change_npin" translatable="false">Change\nPin</string>
+    <string name="forgot_pin" translatable="false">Forgot\nPin?</string>
+    <string name="call_support" translatable="false">Get Support</string>
+    <string name="utilities" translatable="false">Utilities</string>
+    <string name="current_password" translatable="false">Current Password</string>
+    <string name="new_password" translatable="false">New Password</string>
+    <string name="confirm_new_password" translatable="false">Confirm New Password</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="confirm" translatable="false">Confirm</string>
+    <string name="change_password" translatable="false">Change Password</string>
+    <string name="change_pin" translatable="false">Change Pin</string>
+    <string name="current_pin" translatable="false">Current Pin</string>
+    <string name="new_pin" translatable="false">New Pin</string>
+    <string name="confirm_new_pin" translatable="false">Confirm New Pin</string>
+    <string name="transaction_id" translatable="false">Transaction Id :</string>
+    <string name="recharge_id" translatable="false">Recharge Id :</string>
+    <string name="amount" translatable="false">Amount</string>
+    <string name="recharge_failed" translatable="false">Recharge Failed</string>
+    <string name="kyc_not_verified" translatable="false">KYC Not Verified</string>
+    <string name="verify_kyc" translatable="false">Verify KYC</string>
+    <string name="_12_digit_aadhaar_number" translatable="false">12 -Digit Aadhaar Number</string>
+    <string name="manage_users" translatable="false">Manage Users</string>
+    <string name="user_name" translatable="false">User Name</string>
+    <string name="mobile_number" translatable="false">Mobile Number</string>
+    <string name="user_email" translatable="false">User Email</string>
+    <string name="user_address" translatable="false">User Address</string>
+    <string name="upload_aadhaar_card" translatable="false">Upload Aadhaar Card</string>
+    <string name="aadhaar_card" translatable="false">Aadhaar Card </string>
+    <string name="register" translatable="false">Register</string>
+    <string name="pay_bills" translatable="false">Pay Bills</string>
+    <string name="pay_your_bills_with_bbps" translatable="false">Pay your bills with BBPS</string>
+    <string name="services" translatable="false">Our Services</string>
+    <string name="mobile_npostpaid" translatable="false">Mobile Postpaid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="electricity" translatable="false">Electricity</string>
+    <string name="select_state" translatable="false">Select State</string>
+    <string name="select" translatable="false">Select</string>
+    <string name="select_board" translatable="false">Select Board</string>
+    <string name="enter_customer_number" translatable="false">Enter Customer Number</string>
+    <string name="proceed" translatable="false">Proceed</string>
+    <string name="pay_bill" translatable="false">Pay bill</string>
+    <string name="select_dth_operator" translatable="false">Select Dth Operator</string>
+    <string name="select_mobile_operator" translatable="false">Select Mobile Operator</string>
+    <string name="view_receipt" translatable="false">View Receipt</string>
+    <string name="done" translatable="false">Done</string>
+    <string name="fetch_bill" translatable="false">Fetch Bill</string>
+    <string name="or" translatable="false">OR</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="no_address_found" translatable="false">Sorry, no address found</string>
+    <string name="no_location_data_provided" translatable="false">No location data provided</string>
+    <string name="service_not_available" translatable="false">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used" translatable="false">Invalid latitude or longitude used</string>
+    <string name="title_activity_cabs_map" translatable="false">Map</string>
+    <string name="authorization" translatable="false">Authorization</string>
+    <string name="error_mobile_number" translatable="false">Invalid Mobile Number</string>
+    <string name="error_password" translatable="false">Invalid Password</string>
+    <string name="content_type" translatable="false">Content-Type</string>
+    <string name="x_api_key" translatable="false">X-API-KEY</string>
+    <string name="error_internet" translatable="false">No Internet Connection</string>
+    <string name="btn_okay" translatable="false">OKAY</string>
+    <string name="error_invalid_email" translatable="false">Invalid Email</string>
+    <string name="invalid_aadhaar" translatable="false">Invalid Aadhaar Number</string>
+    <string name="error_invalid_address" translatable="false">Invalid Address</string>
+    <string name="error_invalid_name" translatable="false">Invalid Name</string>
+    <string name="scrern_sixe" translatable="false">SCREEN SIZE</string>
+    <string name="error_server_error" translatable="false">Oops! Something went wrong!</string>
+    <string name="error_api" translatable="false">Error of API</string>
+    <string name="response" translatable="false">Response</string>
+    <string name="error_expired_token" translatable="false">Expired token</string>
+    <string name="error_session_expired" translatable="false">Session Expired!</string>
+    <string name="error_please_login_again" translatable="false">Please Login Again</string>
+    <string name="permission_granted" translatable="false">Permission Granted</string>
+    <string name="permission_denied" translatable="false">Permission Denied</string>
+    <string name="error_need_permission" translatable="false">You need to allow access permissions</string>
+    <string name="error_invalid_amount" translatable="false">Invalid Amount</string>
+    <string name="error_invalid_dth" translatable="false">Invalid DTH Number</string>
+    <string name="error_invalid_landline" translatable="false">Invalid Landline Number</string>
+    <string name="error_select_operator" translatable="false">Please Selefcft Operator</string>
+    <string name="view_balance" translatable="false">View Balance</string>
+    <string name="available_balance" translatable="false">Available Balance</string>
+    <string name="error_attention" translatable="false">Attention!!</string>
+    <string name="status" translatable="false">Status</string>
+    <string name="from" translatable="false">From</string>
+    <string name="to" translatable="false">To</string>
+    <string name="select_date" translatable="false">Select Date</string>
+    <string name="launch" translatable="false">LAUNCH E-Digital MATM</string>
+    <string name="cyrusdmt" translatable="false">Cyrus DMT</string>
+    <string name="morpho_device" translatable="false">Morpho Device</string>
+    <string name="amount_debited" translatable="false">Amount \nDebited</string>
+    <string name="product" translatable="false">Product</string>
+    <string name="mantra_device" translatable="false">Mantra Device</string>
+    <string name="bank_account_number" translatable="false">Bank Account Number</string>
+    <string name="request_remarks" translatable="false">Request Remarks</string>
+    <string name="pan_number" translatable="false">Pan Number</string>
+    <string name="electricity_recharge" translatable="false">Electricity Recharge</string>
+    <string name="electricity_number" translatable="false">Electricity Consumer Number</string>
+    <string name="electricity_bill" translatable="false">Electricity \nBill</string>
+    <string name="enter_billing_unit" translatable="false">Enter Billing Unit</string>
+    <string name="select_circle" translatable="false">Select Circle</string>
+    <string name="note_optional" translatable="false">Note (Optional)</string>
+
+
+    <string-array name="arrayFingerCount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="arrayFingerType">
+        <item>FMR</item>
+        <item>FIR</item>
+    </string-array>
+
+    <string-array name="arrayFingerFormat">
+        <item>XML</item>
+        <item>PROTOBUF</item>
+    </string-array>
+
+    <string-array name="arrayEnv">
+        <item>S</item>
+        <item>PP</item>
+        <item>P</item>
+    </string-array>
+
+    <string name="transaction_nhistory" translatable="false">Transaction\History</string>
+    <string name="wallet_nsummary" translatable="false">Wallet\nSummary</string>
+    <string name="don_t_have_account_sign_up" translatable="false"><font color='#000000'>Don\'t have account?</font><font color='#1F7BD6'> Sign UP</font></string>
+    <string name="already_have_account_sign_in" translatable="false"><font color='#000000'>Already have account?</font><font color='#1F7BD6'> Sign In</font></string>
+    <string name="forgot_string" tools:ignore="MissingTranslation" translatable="false">We will send you a One Time Password on your phone number</string>
+    <string name="dmt">DMT</string>
+    <string name="domestic_money_transfer">Domestic Money Transfer</string>
+    <string name="aePS">AePS</string>
+    <string name="aadhar_enabled_payment_system">Aadhar Enabled Payment System</string>
+    <string name="redeem">Redeem</string>
+    <string name="prepaid">Prepaid</string>
+    <string name="postpaid">Postpaid</string>
+    <string name="dth">DTH</string>
+    <string name="landline">Landline</string>
+    <string name="bill_payment">Bill Payment</string>
+    <string name="buy_products_and_services">Buy Products and Services</string>
+    <string name="aadhar_pay">Aadhar Pay</string>
+    <string name="cash_deposit">Cash Deposit</string>
+    <string name="buy_history">Buy History</string>
+    <string name="cash_deposit_nwith_otp">Cash Deposit \nwith OTP</string>
+    <string name="scanner">Scanner</string>
+    <string name="offline_pancard">Offline Pancard</string>
+    <string name="view_daybook">View Daybook</string>
+    <string name="view_reports">View Reports</string>
+</resources>
