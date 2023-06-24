@@ -81,6 +81,7 @@
 
 
                 <RelativeLayout
+                    android:visibility="gone"
                     android:id="@+id/cvWalletBalanceDth"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="@dimen/_35sdp"

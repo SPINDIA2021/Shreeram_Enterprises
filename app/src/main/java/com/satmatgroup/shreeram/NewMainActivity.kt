@@ -492,7 +492,7 @@ class NewMainActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompleteListen
             Log.e(AppConstants.MESSAGE, messageCode)
             if (status.contains(AppConstants.TRUE)) {
 
-                tvWallet.text="Wallet ("+"${getString(R.string.Rupee)} ${jsonObject.getString(AppConstants.WALLETBALANCE)}"+")"
+           //     tvWallet.text="Wallet ("+"${getString(R.string.Rupee)} ${jsonObject.getString(AppConstants.WALLETBALANCE)}"+")"
 
               /*  tvWalletBalance.text =
                     "${getString(R.string.Rupee)} ${jsonObject.getString(AppConstants.WALLETBALANCE)}"*/
@@ -522,7 +522,8 @@ class NewMainActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompleteListen
             Log.e(AppConstants.MESSAGE, messageCode)
             if (status.contains(AppConstants.TRUE)) {
 
-
+                tvWallet.text =
+                    "AEPS Balance ( "+"${getString(R.string.Rupee)} ${jsonObject.getString("AEPSBalance")}"+" )"
               /*  tvAepsBalance.text =
                     "${getString(R.string.Rupee)} ${jsonObject.getString("AEPSBalance")}"*/
 
@@ -947,6 +948,7 @@ class NewMainActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompleteListen
             getServiceStatus(userModel.cus_id, "microatm_service")
 
         }*/
+        rl_requestmoneyNew.visibility=View.GONE
         rl_requestmoneyNew.setOnClickListener {
             val intent = Intent(this, RequestFundsActivity::class.java)
             startActivity(intent)
