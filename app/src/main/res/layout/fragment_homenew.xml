@@ -195,10 +195,13 @@
                android:src="@drawable/cityhal" />
        </RelativeLayout>
     </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
     <LinearLayout
         android:visibility="visible"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <ImageView
@@ -217,22 +220,24 @@
             android:singleLine="true"
             android:layout_gravity="center_vertical"
             android:textColor="@color/black"
-            android:textSize="14sp" />
-        <TextView
+            android:textSize="12sp" />
 
-            android:id="@+id/tvRedeemNew"
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/bg_buttons"
-            android:gravity="center"
-            android:text="@string/redeem"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:visibility="gone"/>
     </LinearLayout>
+                <TextView
+                    android:id="@+id/tvRedeemNew"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_buttons"
+                    android:gravity="center"
+                    android:text="@string/redeem"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"/>
+            </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -540,7 +545,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/electricity"
+                    android:text="@string/bbps"
                     android:textAlignment="center"
                     android:singleLine="true"
                     android:layout_marginTop="5dp"
@@ -602,7 +607,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/aadhar_pay"
+                    android:text="@string/aePS"
                     android:textAlignment="center"
                     android:singleLine="true"
                     android:layout_marginTop="5dp"

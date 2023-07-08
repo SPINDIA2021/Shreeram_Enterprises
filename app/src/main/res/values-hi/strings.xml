@@ -246,5 +246,6 @@
     <string name="offline_pancard">ऑफलाइन पैनकार्ड</string>
     <string name="view_daybook">डेबुक देखें</string>
     <string name="view_reports">रिपोर्ट देखें</string>
+    <string name="bbps">BBPS</string>
 
 </resources>

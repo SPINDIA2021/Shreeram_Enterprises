@@ -28,7 +28,7 @@
             <RelativeLayout
                 android:id="@+id/rl_top"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_150sdp"
+                android:layout_height="175dp"
                 android:background="@drawable/bg_general_new" />
 
             <androidx.appcompat.widget.Toolbar
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_20sdp"
                     android:paddingRight="@dimen/_5sdp"
-                    android:text="@string/pay_bills"
+                    android:text="BBPS"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14sdp" />
@@ -63,6 +63,7 @@
             </androidx.appcompat.widget.Toolbar>
 
             <TextView
+                android:visibility="visible"
                 android:id="@+id/tvPayBillsTag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,6 +76,7 @@
                 android:textSize="@dimen/_14sdp" />
 
             <ImageView
+                android:visibility="visible"
                 android:layout_width="@dimen/_60sdp"
                 android:layout_height="@dimen/_60sdp"
                 android:layout_below="@+id/custToolbar"
@@ -90,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvPayBillsTag"
                 android:layout_marginLeft="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginTop="0dp"
                 android:padding="@dimen/_3sdp"
                 android:text="@string/services"
                 android:textColor="@color/white"
@@ -145,12 +147,41 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center"
                                 android:padding="@dimen/_1sdp"
-                                android:text="@string/mobile_recharge"
+                                android:text="@string/prepaid"
                                 android:textAlignment="center"
                                 android:textColor="@color/black" />
 
                         </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/rl_postpaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
 
+                            <ImageView
+                                android:id="@+id/ivEductaion"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/bg_circle_white"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/icon_phone"
+                                app:tint="#FFA000" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_below="@+id/ivEductaion"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:elevation="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:text="@string/postpaid"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
                         <RelativeLayout
                             android:id="@+id/rl_dthRecharge"
                             android:layout_width="match_parent"
@@ -179,35 +210,7 @@
 
                         </RelativeLayout>
 
-                        <RelativeLayout
-                            android:id="@+id/rl_landlineRecharge"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
 
-                            <ImageView
-                                android:id="@+id/ivLandline"
-                                android:layout_width="@dimen/_40sdp"
-                                android:layout_height="@dimen/_40sdp"
-                                android:layout_centerHorizontal="true"
-                                android:background="@drawable/bg_circle_white"
-                                android:padding="@dimen/_5sdp"
-                                android:src="@drawable/ic_svg_landline_recharge" />
-
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/_35sdp"
-                                android:layout_below="@+id/ivLandline"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center"
-                                android:padding="@dimen/_1sdp"
-                                android:text="Landline\nPayment"
-                                android:textAlignment="center"
-                                android:textColor="@color/black" />
-
-
-                        </RelativeLayout>
 
 
                     </LinearLayout>
@@ -263,8 +266,8 @@
                                 android:layout_centerHorizontal="true"
                                 android:background="@drawable/bg_circle_white"
                                 android:padding="@dimen/_5sdp"
-                                app:tint="@color/material_yellow_700"
-                                android:src="@drawable/icon_gas" />
+                                android:src="@drawable/icon_gas"
+                                app:tint="@color/material_yellow_700" />
 
 
                             <TextView
@@ -279,45 +282,6 @@
                                 android:textColor="@color/black" />
                         </RelativeLayout>
 
-                        <RelativeLayout
-                            android:id="@+id/rl_fasttag"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <ImageView
-                                android:id="@+id/ivFasTag"
-                                android:layout_width="@dimen/_40sdp"
-                                android:layout_height="@dimen/_40sdp"
-                                android:layout_centerHorizontal="true"
-                                android:background="@drawable/bg_circle_white"
-                                android:padding="@dimen/_5sdp"
-                                android:src="@drawable/ic_svg_fasttag" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/_35sdp"
-                                android:layout_below="@+id/ivFasTag"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center"
-                                android:padding="@dimen/_1sdp"
-                                android:text="@string/fasttag_nrecharge"
-                                android:textAlignment="center"
-                                android:textColor="@color/black" />
-
-
-                        </RelativeLayout>
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/ll_three"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/ll_two"
-                        android:padding="@dimen/_4sdp"
-                        android:weightSum="3">
 
                         <RelativeLayout
                             android:id="@+id/rl_water"
@@ -348,6 +312,18 @@
                         </RelativeLayout>
 
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/ll_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_two"
+                        android:padding="@dimen/_4sdp"
+                        android:weightSum="3">
+
+
                         <RelativeLayout
                             android:id="@+id/rl_broadband"
                             android:layout_width="match_parent"
@@ -361,8 +337,8 @@
                                 android:layout_centerHorizontal="true"
                                 android:background="@drawable/bg_circle_white"
                                 android:padding="@dimen/_5sdp"
-                                app:tint="@color/grey"
-                                android:src="@drawable/icon_broadband" />
+                                android:src="@drawable/icon_broadband"
+                                app:tint="@color/grey" />
 
 
                             <TextView
@@ -407,16 +383,6 @@
 
                         </RelativeLayout>
 
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/ll_four"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/ll_three"
-                        android:padding="@dimen/_4sdp"
-                        android:weightSum="3">
-
                         <RelativeLayout
                             android:id="@+id/rl_pipedgas"
                             android:layout_width="match_parent"
@@ -430,7 +396,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:background="@drawable/bg_circle_white"
                                 android:padding="@dimen/_5sdp"
-                                app:tint=" #C82AE3"
+                                app:tint="#C82AE3"
                                 android:src="@drawable/icon_piped_gas" />
 
 
@@ -446,6 +412,52 @@
                                 android:textColor="@color/black" />
 
                         </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/ll_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_three"
+                        android:padding="@dimen/_4sdp"
+                        android:weightSum="3">
+                        <RelativeLayout
+                            android:id="@+id/rl_municipaltaxes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/ivMunicipalTaxes"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/bg_circle_white"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/icon_municipality"
+                                app:tint="#065E54" />
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_below="@+id/ivMunicipalTaxes"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:text="Municipal\nTaxes"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+
+
+
+
 
 
                         <RelativeLayout
@@ -510,15 +522,44 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:visibility="visible"
                         android:id="@+id/ll_five"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/ll_four"
                         android:padding="@dimen/_4sdp"
                         android:weightSum="3">
+                        <RelativeLayout
+                            android:id="@+id/rl_traffic_challan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/ivFasTag"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/bg_circle_white"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/traffic_challan" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_below="@+id/ivFasTag"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:padding="@dimen/_1sdp"
+                                android:text="Traffic Challan"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+
+                        </RelativeLayout>
 
                         <RelativeLayout
-                            android:id="@+id/rl_housingsoc"
+                            android:id="@+id/rl_hospital"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1">
@@ -530,8 +571,8 @@
                                 android:layout_centerHorizontal="true"
                                 android:background="@drawable/bg_circle_white"
                                 android:padding="@dimen/_5sdp"
-                                app:tint="#FF6F00"
-                                android:src="@drawable/icon_hohusing" />
+                                android:src="@drawable/hospital"
+                                />
 
 
 
@@ -542,75 +583,45 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center"
                                 android:padding="@dimen/_1sdp"
-                                android:text="Housing\nSociety"
+                                android:text="Hospital"
                                 android:textAlignment="center"
                                 android:textColor="@color/black" />
 
                         </RelativeLayout>
 
 
+
                         <RelativeLayout
-                            android:id="@+id/rl_municipaltaxes"
+                            android:id="@+id/rl_landlineRecharge"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1">
 
                             <ImageView
-                                android:id="@+id/ivMunicipalTaxes"
+                                android:id="@+id/ivLandline"
                                 android:layout_width="@dimen/_40sdp"
                                 android:layout_height="@dimen/_40sdp"
                                 android:layout_centerHorizontal="true"
                                 android:background="@drawable/bg_circle_white"
                                 android:padding="@dimen/_5sdp"
-                                app:tint="#065E54"
-                                android:src="@drawable/icon_municipality" />
-
-
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/_35sdp"
-                                android:layout_below="@+id/ivMunicipalTaxes"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center"
-                                android:padding="@dimen/_1sdp"
-                                android:text="Municipal\nTaxes"
-                                android:textAlignment="center"
-                                android:textColor="@color/black" />
-
-                        </RelativeLayout>
-
-
-                        <RelativeLayout
-                            android:id="@+id/rl_education"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <ImageView
-                                android:id="@+id/ivEductaion"
-                                android:layout_width="@dimen/_40sdp"
-                                android:layout_height="@dimen/_40sdp"
-                                android:layout_centerHorizontal="true"
-                                android:background="@drawable/bg_circle_white"
-                                android:padding="@dimen/_5sdp"
-                                app:tint="#FFA000"
-                                android:src="@drawable/icon_school" />
+                                android:src="@drawable/ic_svg_landline_recharge" />
 
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/_35sdp"
-                                android:layout_below="@+id/ivEductaion"
+                                android:layout_below="@+id/ivLandline"
                                 android:layout_centerHorizontal="true"
-                                android:layout_marginBottom="@dimen/_5sdp"
-                                android:elevation="@dimen/_2sdp"
                                 android:gravity="center"
                                 android:padding="@dimen/_1sdp"
-                                android:text="Education\nFees"
+                                android:text="Landline\nPayment"
                                 android:textAlignment="center"
                                 android:textColor="@color/black" />
+
+
                         </RelativeLayout>
+
+
 
                     </LinearLayout>
 
@@ -621,6 +632,7 @@
 
 
             <LinearLayout
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/cvPayBillsBtn"

@@ -245,4 +245,5 @@
     <string name="offline_pancard">Offline Pancard</string>
     <string name="view_daybook">View Daybook</string>
     <string name="view_reports">View Reports</string>
+    <string name="bbps">BBPS</string>
 </resources>

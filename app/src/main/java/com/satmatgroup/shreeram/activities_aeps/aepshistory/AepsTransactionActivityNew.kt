@@ -99,6 +99,8 @@ class AepsTransactionActivityNew : AppCompatActivity(), BankAepsListAdapter.List
             transaction= bundle.getString("transaction").toString()
             transactionType= bundle.getString("transactionType").toString()
             from=bundle.getString("from").toString()
+        }else{
+            transactionType="cashwithdrawal"
         }
 
         if (from.equals("A"))
@@ -240,6 +242,8 @@ class AepsTransactionActivityNew : AppCompatActivity(), BankAepsListAdapter.List
         }
 
         lay_submit.setOnClickListener {
+
+
             if (etAepsAadharNo.text.toString().length < 12 || etAepsAadharNo.text.isNullOrEmpty()) {
                 etAepsAadharNo.requestFocus()
                 etAepsAadharNo.error = "Invalid Aadhar Number"
@@ -256,13 +260,18 @@ class AepsTransactionActivityNew : AppCompatActivity(), BankAepsListAdapter.List
 
                 toast("Please Select Transaction Type")
             } else {
+                if (transactionType.equals("null"))
+                {
+                    transactionType="cashwithdrawal"
+                }
+                Log.e("TransactionType", transactionType)
 
                 sendAmount = etAepsAmount.text.toString()
                 val bundle = Bundle()
                 bundle.putString("latitude", latitudeLabel);
                 bundle.putString("longitude", longitudeLabel);
                 bundle.putString("flag", "aeps")
-                bundle.putString("cus_id", userModel.cus_mobile)
+                bundle.putString("cus_id", userModel.cus_id)
                 bundle.putString("aadhar_no", etAepsAadharNo.text.toString())
                 bundle.putString(
                     "nationalBankIdenticationNumber",

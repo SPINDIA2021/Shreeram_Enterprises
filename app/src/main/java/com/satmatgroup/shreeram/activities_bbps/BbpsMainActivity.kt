@@ -9,10 +9,13 @@ import androidx.fragment.app.Fragment
 import com.satmatgroup.shreeram.R
 import com.satmatgroup.shreeram.activities_bbps.complaints.ComplaintStatusActivity
 import com.satmatgroup.shreeram.activities_bbps.complaints.RaiseComplaintActivity
-import com.satmatgroup.shreeram.activities_bbps.services_fragments.BbpsElectricityFragment
-import com.satmatgroup.shreeram.activities_bbps.services_fragments.BbpsMobilePostpaidFragment
-import com.satmatgroup.shreeram.activities_bbps.services_fragments.BbpsdthFragment
+import com.satmatgroup.shreeram.recharge_services.*
 import kotlinx.android.synthetic.main.activity_bbps_main.*
+import kotlinx.android.synthetic.main.activity_bbps_main.custToolbar
+import kotlinx.android.synthetic.main.activity_bbps_main.rl_dthRecharge
+import kotlinx.android.synthetic.main.activity_bbps_main.rl_electricity
+import kotlinx.android.synthetic.main.activity_bbps_main.rl_landlineRecharge
+import kotlinx.android.synthetic.main.activity_bbps_main.rl_mobileRecharge
 import kotlinx.android.synthetic.main.activity_bbps_main.view.*
 
 
@@ -31,25 +34,103 @@ class BbpsMainActivity : AppCompatActivity() {
         }
 
 
+        rl_landlineRecharge.setOnClickListener {
+
+            val intent = Intent(this, LandLineRechargeActivity::class.java)
+            startActivity(intent)
+            /* val fragment = BbpsdthFragment()
+             loadFragment(fragment)*/
+
+        }
+
+        rl_lpggas.setOnClickListener {
+            val intent = Intent(this, LPGGasRechargeActivity::class.java)
+            startActivity(intent)
+        }
+
+        rl_water.setOnClickListener {
+            val intent = Intent(this, WaterRechargeActivity::class.java)
+            startActivity(intent)
+        }
+
         rl_electricity.setOnClickListener {
 
-            val fragment = BbpsElectricityFragment()
-            loadFragment(fragment)
+            val intent = Intent(this, ElectricityRechargeActivity::class.java)
+            startActivity(intent)
+            /*val fragment = BbpsElectricityFragment()
+            loadFragment(fragment)*/
 
         }
         rl_dthRecharge.setOnClickListener {
 
-            val fragment = BbpsdthFragment()
-            loadFragment(fragment)
+            val intent = Intent(this, DthRechargeActivity::class.java)
+            startActivity(intent)
+           /* val fragment = BbpsdthFragment()
+            loadFragment(fragment)*/
 
         }
         rl_mobileRecharge.setOnClickListener {
 
-            val fragment = BbpsMobilePostpaidFragment()
-            loadFragment(fragment)
-
+            val intent = Intent(this, MobilePrepaidActivity::class.java)
+            startActivity(intent)
+           /* val fragment = BbpsMobilePostpaidFragment()
+            loadFragment(fragment)*/
         }
-        tvRaiseComplaint.setOnClickListener {
+
+
+        rl_broadband.setOnClickListener {
+
+            val intent = Intent(this, BroadbandRechargeActivity::class.java)
+            startActivity(intent)
+        }
+
+        rl_insurance.setOnClickListener {
+
+            val intent = Intent(this, InsurancePaymentActivity::class.java)
+            startActivity(intent)
+        }
+
+        rl_pipedgas.setOnClickListener {
+
+            val intent = Intent(this, PipedGasRechargeActivity::class.java)
+            startActivity(intent)
+        }
+
+        rl_municipaltaxes.setOnClickListener {
+
+            val intent = Intent(this, MunicipleTaxesPaymentActivity::class.java)
+            startActivity(intent)
+        }
+
+        rl_loanpayment.setOnClickListener {
+            val intent = Intent(this, LoanRePaymentActivity::class.java)
+            startActivity(intent)
+        }
+
+        rl_cabletv.setOnClickListener {
+            val intent = Intent(this, CableRechargeActivity::class.java)
+            startActivity(intent)
+        }
+
+        rl_traffic_challan.setOnClickListener {
+            val intent = Intent(this, TrafficChallanPaymentActivity::class.java)
+            startActivity(intent)
+        }
+
+        rl_hospital.setOnClickListener {
+            val intent = Intent(this, HospitalPaymentActivity::class.java)
+            startActivity(intent)
+        }
+
+        rl_postpaid.setOnClickListener {
+            val intent = Intent(this, MobilePostpaidActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
+
+      /*  tvRaiseComplaint.setOnClickListener {
             val intent = Intent(this, RaiseComplaintActivity::class.java)
             startActivity(intent)
         }
@@ -58,7 +139,7 @@ class BbpsMainActivity : AppCompatActivity() {
             val intent = Intent(this, ComplaintStatusActivity::class.java)
             startActivity(intent)
 
-        }
+        }*/
 
     }
 

@@ -67,7 +67,7 @@ class LandLineRechargeActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompl
 
         tts = TextToSpeech(this, this)
 
-        getOperatorApi(AppConstants.OPERATOR_DTH)
+        getOperatorApi("Landline")
 
         custToolbar.ivBackBtn.setOnClickListener {
             onBackPressed()
@@ -230,15 +230,22 @@ class LandLineRechargeActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompl
 
                 for (i in 0 until cast.length()) {
                     val notifyObjJson = cast.getJSONObject(i)
-                    val operatorname = notifyObjJson.getString("operatorname")
-                    Log.e("operator_name ", operatorname)
-                    val operatorsModel = Gson()
-                        .fromJson(
-                            notifyObjJson.toString(),
-                            OperatorsModel::class.java
-                        )
 
-                    operatorsModelArrayList.add(operatorsModel)
+                    if (notifyObjJson.getString("opsertype").equals("landline"))
+                    {
+
+                        val operatorsModel = Gson()
+                            .fromJson(
+                                notifyObjJson.toString(),
+                                OperatorsModel::class.java
+                            )
+
+                        operatorsModelArrayList.add(operatorsModel)
+
+                        val operatorname = notifyObjJson.getString("operatorname")
+
+                        Log.e("operator_name ", operatorname)
+                    }
                 }
 
 

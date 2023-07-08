@@ -34,6 +34,7 @@ import com.google.gson.Gson
 import com.satmatgroup.shreeram.activities_aeps.AepsOnboardActivity
 import com.satmatgroup.shreeram.activities_aeps.CashDepositOtpActivity
 import com.satmatgroup.shreeram.activities_aeps.aepshistory.AepsTransactionActivityNew
+import com.satmatgroup.shreeram.activities_bbps.BbpsMainActivity
 import com.satmatgroup.shreeram.authentication.LoginActivity
 import com.satmatgroup.shreeram.category.CategoryActivity
 import com.satmatgroup.shreeram.daybook.DayBookTabActivity
@@ -710,8 +711,13 @@ class NewMainActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompleteListen
                         } else {
                             //checkKycstatus(userModel.cus_id)
                             if(newaepskyc_status.equals("done")) {
+
+                                val bundle = Bundle()
+                                bundle.putString("transactionType","cashwithdrawal")
+                                bundle.putString("transaction", "Cash Withdrawal")
+                                bundle.putString("from","O")
                                 val intent = Intent(this, AepsTransactionActivityNew::class.java)
-                                intent.putExtra("from","O")
+                                intent.putExtras(bundle)
                                 startActivity(intent)
                             } else if(aeps_kyc_status.equals("KYC Not Completed") && newaepskyc_status.equals("not-done")){
                                 val intent = Intent(this, KycVerificationActivity::class.java)
@@ -760,7 +766,7 @@ class NewMainActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompleteListen
                             serviceName = "Bill Service"
                             getServiceAmount(serviceName!!)
                         } else {
-                            val intent = Intent(this, ElectricityRechargeActivity::class.java)
+                            val intent = Intent(this, BbpsMainActivity::class.java)
                             startActivity(intent)
                         }
                     } else if (service.equals("microatm_service")) {

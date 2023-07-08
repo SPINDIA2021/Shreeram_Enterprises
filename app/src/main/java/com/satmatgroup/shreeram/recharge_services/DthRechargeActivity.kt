@@ -74,7 +74,6 @@ class DthRechargeActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompleteLi
 
         tvChooseOperator.setOnClickListener {
             showOperatorsBottomSheet()
-
         }
 
         cvRechargeDthBtn.setOnClickListener {
@@ -93,22 +92,16 @@ class DthRechargeActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompleteLi
                     getString(R.string.error_invalid_amount)
                 return@setOnClickListener
             } else if (tvChooseOperator.text.isNullOrEmpty()) {
-
                 tvChooseOperator.requestFocus()
                 tvChooseOperator.error =
                     getString(R.string.error_select_operator)
                 return@setOnClickListener
             } else {
-
                 checkIfSameRecharge(
                     userModel.cus_mobile, etDthNumber.text.toString(),
                     etAmountDth.text.toString(), operator_code
                 )
-
-
             }
-
-
         }
 
         cvBrowsePlans.setOnClickListener {
@@ -262,15 +255,22 @@ class DthRechargeActivity : AppCompatActivity(), AppApiCalls.OnAPICallCompleteLi
 
                 for (i in 0 until cast.length()) {
                     val notifyObjJson = cast.getJSONObject(i)
-                    val operatorname = notifyObjJson.getString("operatorname")
-                    Log.e("operator_name ", operatorname)
-                    val operatorsModel = Gson()
-                        .fromJson(
-                            notifyObjJson.toString(),
-                            OperatorsModel::class.java
-                        )
 
-                    operatorsModelArrayList.add(operatorsModel)
+                    if (notifyObjJson.getString("opsertype").equals("dth"))
+                    {
+
+                        val operatorsModel = Gson()
+                            .fromJson(
+                                notifyObjJson.toString(),
+                                OperatorsModel::class.java
+                            )
+
+                        operatorsModelArrayList.add(operatorsModel)
+
+                    val operatorname = notifyObjJson.getString("operatorname")
+
+                    Log.e("operator_name ", operatorname)
+                    }
                 }
 
 

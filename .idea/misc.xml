@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_aeps_transaction_new.xml" value="0.17" />
+        <entry key="app/src/main/res/layout/activity_bbps_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_dth_recharge.xml" value="0.246875" />
         <entry key="app/src/main/res/layout/activity_electricity_recharge.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/activity_gas.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/activity_land_line_recharge.xml" value="0.246875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17407407407407408" />
         <entry key="app/src/main/res/layout/activity_mobile_postpaid.xml" value="0.246875" />
         <entry key="app/src/main/res/layout/activity_mobile_prepaid.xml" value="0.246875" />
         <entry key="app/src/main/res/layout/activity_payout.xml" value="0.24791666666666667" />
         <entry key="app/src/main/res/layout/activity_request_funds.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/activity_water.xml" value="0.246875" />
         <entry key="app/src/main/res/layout/bottom_amount.xml" value="0.24791666666666667" />
-        <entry key="app/src/main/res/layout/fragment_homenew.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_homenew.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_mobile_prepaid.xml" value="0.246875" />
       </map>
     </option>

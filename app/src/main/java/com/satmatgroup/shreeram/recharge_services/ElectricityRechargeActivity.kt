@@ -279,7 +279,25 @@ class ElectricityRechargeActivity : AppCompatActivity(), AppApiCalls.OnAPICallCo
 
                 for (i in 0 until cast.length()) {
                     val notifyObjJson = cast.getJSONObject(i)
-                    val operatorname = notifyObjJson.getString("operatorname")
+
+                    if (notifyObjJson.getString("opsertype").equals("Electricity"))
+                    {
+
+                        val operatorsModel = Gson()
+                            .fromJson(
+                                notifyObjJson.toString(),
+                                OperatorsModel::class.java
+                            )
+
+                        mobileRechargeModalArrayList.add(operatorsModel)
+
+                        val operatorname = notifyObjJson.getString("operatorname")
+
+                        Log.e("operator_name ", operatorname)
+                    }
+
+
+                  /*  val operatorname = notifyObjJson.getString("operatorname")
                     Log.e("operator_name ", operatorname)
                     val mobilerechModal = Gson()
                         .fromJson(
@@ -288,7 +306,7 @@ class ElectricityRechargeActivity : AppCompatActivity(), AppApiCalls.OnAPICallCo
                         )
 
 
-                    mobileRechargeModalArrayList.add(mobilerechModal)
+                    mobileRechargeModalArrayList.add(mobilerechModal)*/
                 }
 
 

@@ -72,6 +72,17 @@
         <activity android:name=".dmt.AddBeneficiaryActivity" />
         <activity android:name=".recharge_services.MobilePostpaidActivity"/>
         <activity android:name=".recharge_services.MobilePrepaidActivity"/>
+        <activity android:name=".recharge_services.LPGGasRechargeActivity"/>
+        <activity android:name=".recharge_services.WaterRechargeActivity"/>
+        <activity android:name=".recharge_services.BroadbandRechargeActivity"/>
+        <activity android:name=".recharge_services.InsurancePaymentActivity"/>
+        <activity android:name=".recharge_services.PipedGasRechargeActivity"/>
+        <activity android:name=".recharge_services.MunicipleTaxesPaymentActivity"/>
+        <activity android:name=".recharge_services.LoanRePaymentActivity"/>
+        <activity android:name=".recharge_services.CableRechargeActivity"/>
+        <activity android:name=".recharge_services.TrafficChallanPaymentActivity"/>
+        <activity android:name=".recharge_services.MunicipalityPaymentActivity"/>
+        <activity android:name=".recharge_services.HospitalPaymentActivity"/>
         <activity
             android:name=".dmt.ViewDmtTransactionActivity"
             android:screenOrientation="portrait" />
