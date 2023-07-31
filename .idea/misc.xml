@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_add_money.xml" value="0.246875" />
         <entry key="app/src/main/res/layout/activity_aeps_transaction_new.xml" value="0.17" />
         <entry key="app/src/main/res/layout/activity_bbps_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_dth_recharge.xml" value="0.246875" />
